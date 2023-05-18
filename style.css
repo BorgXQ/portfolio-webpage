@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@100;200;300;400;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1.5px);
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.topBar .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.topBar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.topBar ul a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.9rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.83rem;
+}
+
+.topBar ul a:hover {
+    color: #6c6e78;
+    transition: 0.1s;
+}
+
+main {
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 25rem;
+    padding: 6.25rem 20vw;
+}
+
+.background {
+    position: absolute;
+    width: 2800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black1 {
+    background: #0F0E11;
+} .black2 {
+    background: #23252D;
+} .black3 {
+    background: #2B2D35;
+} .black4 {
+    background: #3A3C44;
+} .black5 {
+    background: #46484F;
+}
+
+.topSection {
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.mainContent {
+    color: #fff;
+    max-width: 37.5rem;
+}
+
+.mainContent .hi {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.mainContent h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.mainContent h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #6c6e78;
+}
+
+.mainContent p {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.mainContent .connect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+    margin-top: 3rem;
+    background: transparent;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mainContent a:hover {
+    color: #6c6e78;
+    transition: 0.1s ease;
+}
+
+.mainContent .iconContainer {
+    display: flex;
+    align-items: center;
+}
+
+.iconContainer a ion-icon {
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 0.5em;
+    margin-top: 1em;
+}
+
+.iconContainer a ion-icon:hover {
+    color: #6c6e78;
+    transition: 0.3s ease;
+}
+
+.spacer {
+    aspect-ratio: 960/50;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    letter-spacing: 1px;
+}
+
+.waveLayer1 {
+    background-image: url('img/waveLayer1.svg');
+} .waveLayer2 {
+    background-image: url('img/waveLayer2.svg');
+} .waveLayer3 {
+    background-image: url('img/waveLayer3.svg');
+}
