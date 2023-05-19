@@ -74,14 +74,14 @@ section {
     padding: 6.25rem 20vw;
 }
 
-.background {
+/* .background {
     position: absolute;
     width: 2800px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-}
+} */
 
 .black1 {
     background: #0F0E11;
@@ -95,6 +95,56 @@ section {
     background: #46484F;
 }
 
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideRight {
+    0%,
+    30%,
+    60% {
+        border-left: solid;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    15%,
+    45% {
+        border-left: none;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateX(37rem);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(37rem);
+        opacity: 0;
+    }
+}
+
 .topSection {
     height: 100vh;
     align-items: flex-start;
@@ -105,6 +155,16 @@ section {
 .mainContent {
     color: #fff;
     max-width: 37.5rem;
+}
+
+.mainContent .headerBox {
+    position: absolute;
+    z-index: 10;
+    width: 38rem;
+    height: 6.5rem;
+    background: #0F0E11;
+    border-left: solid 1px #fff;
+    animation: slideRight 3s ease-in-out both;
 }
 
 .mainContent .hi {
@@ -122,11 +182,13 @@ section {
     font-size: 2rem;
     color: transparent;
     -webkit-text-stroke: 1px #6c6e78;
+    animation: slideInLeft 1s ease 2.5s both;
 }
 
 .mainContent p {
     font-weight: 200;
     font-size: 1rem;
+    animation: slideInLeft 1s ease 2.8s both;
 }
 
 .mainContent .connect {
@@ -140,6 +202,7 @@ section {
     font-size: 1.2rem;
     color: #fff;
     text-decoration: none;
+    animation: fadeIn 2s ease 3.5s both;
 }
 
 .mainContent a:hover {
@@ -157,6 +220,7 @@ section {
     font-size: 2rem;
     margin-right: 0.5em;
     margin-top: 1em;
+    animation: fadeIn 2s ease 3.5s both;
 }
 
 .iconContainer a ion-icon:hover {
